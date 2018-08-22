@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vehicle_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/colorbackground"
+    tools:context="com.example.tankup.VehicleAdd">
+
+    <Button
+        android:text="Add"
+        android:background="#0b7cac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Add_butt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter vehicle Number"
+        android:ems="10"
+        android:id="@+id/editText_number"
+        android:layout_above="@+id/Add_butt"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Mileage"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_above="@+id/editText_number"
+        android:layout_alignStart="@+id/editText_vehicle"
+        android:layout_alignLeft="@+id/editText_vehicle" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter New Vehicle Name"
+        android:ems="10"
+        android:id="@+id/editText_vehicle"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView"
+        android:id="@+id/list"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:text="Add New Vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/editText_vehicle"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

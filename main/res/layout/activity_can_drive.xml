@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_can_drive"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smile2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tankup.CanDrive">
+
+    <TextView
+        android:text="Required fuel"
+        android:textStyle="bold"
+        android:textColor="#4d1ec6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_reqF"
+        android:textSize="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp" />
+
+    <TextView
+        android:text="You can Drive to Destination!!!"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#420360"
+        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="78dp"
+        android:layout_below="@+id/textView_setRF"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Drive"
+        android:background="#0b7cac"
+        android:onClick="DriveToDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/textView_setRF"
+        android:layout_toEndOf="@+id/textView_setRF"
+        android:layout_marginTop="253dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dr2"
+        android:id="@+id/imageView4"
+        android:layout_marginRight="90dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginTop="191dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView_reqF"
+        android:layout_toStartOf="@+id/textView_reqF" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/textView_setRF"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_below="@+id/textView_reqF"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+</RelativeLayout>

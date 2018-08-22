@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/colorbackground"
+    tools:context="com.example.tankup.CreateAccount">
+
+    <TextView
+        android:text="Name :"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginStart="13dp"
+        android:id="@+id/editText_email"
+        android:layout_alignBaseline="@+id/textView_email"
+        android:layout_alignBottom="@+id/textView_email"
+        android:layout_toEndOf="@+id/textView_email"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/textView_email" />
+
+    <TextView
+        android:text="(Email id will be your username)"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/editText_email"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText_password"
+        android:layout_alignBaseline="@+id/textView_password"
+        android:layout_alignBottom="@+id/textView_password"
+        android:layout_toEndOf="@+id/textView_password"
+        android:layout_toRightOf="@+id/textView_password" />
+
+    <Button
+        android:text="Sign Up"
+        android:background="#0b7cac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_signUp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onSignUpClick"
+        android:layout_marginBottom="97dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText_confPassword"
+        android:layout_above="@+id/button_signUp"
+        android:layout_toEndOf="@+id/textView_confPassword"
+        android:layout_marginBottom="42dp"
+        android:layout_toRightOf="@+id/textView_confPassword" />
+
+    <TextView
+        android:text="Confirmed password :"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_confPassword"
+        android:layout_alignBottom="@+id/editText_confPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="Password :"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_password"
+        android:layout_marginBottom="49dp"
+        android:layout_above="@+id/editText_confPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="Email id :"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_email"
+        android:layout_below="@+id/editText_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="full name"
+        android:ems="10"
+        android:id="@+id/editText_name"
+        android:layout_alignBaseline="@+id/textView_name"
+        android:layout_alignBottom="@+id/textView_name"
+        android:layout_toRightOf="@+id/textView_email"
+        android:layout_toEndOf="@+id/textView_email" />
+
+</RelativeLayout>

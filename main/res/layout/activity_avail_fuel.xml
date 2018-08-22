@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_avail_fuel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/colorbackground"
+    tools:context="com.example.tankup.AvailFuel">
+
+    <Button
+        android:text="Start Journey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_GoToMap"
+        android:onClick="StartJourney"
+        android:background="#0b7cac"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter fuel in liters"
+        android:ems="10"
+        android:textAlignment="center"
+        android:id="@+id/editText_fromUserFuel"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Fuel Available ::"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_lable"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/editText_fromUserFuel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_FuelAva"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/textView_lable"
+        android:layout_alignBottom="@+id/textView_lable"
+        android:layout_alignRight="@+id/editText_fromUserFuel"
+        android:layout_alignEnd="@+id/editText_fromUserFuel" />
+
+    <TextView
+       android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_lable_number"
+        android:layout_alignLeft="@+id/textView_lable_number"
+        android:layout_alignStart="@+id/textView_lable_number"
+        android:layout_marginTop="35dp"
+        android:id="@+id/textView_DBNumber" />
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_DBMileage"
+        android:layout_alignBaseline="@+id/textView_DBNumber"
+        android:layout_alignBottom="@+id/textView_DBNumber"
+        android:layout_alignLeft="@+id/textView_lable_mileage"
+        android:layout_alignStart="@+id/textView_lable_mileage" />
+
+    <TextView
+        android:text="Number"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_lable_number"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button_GoToMap"
+        android:layout_toStartOf="@+id/button_GoToMap" />
+
+    <TextView
+        android:text="Mileage"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_lable_mileage"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button_GoToMap"
+        android:layout_alignEnd="@+id/button_GoToMap" />
+
+    <Button
+        android:text="Add Fuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_addFuelToDB"
+        android:onClick="AddFuelToDB"
+        android:background="#0b7cac"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/button_GoToMap"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

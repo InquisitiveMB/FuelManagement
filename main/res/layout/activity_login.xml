@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/colorbackground"
+    tools:context="com.example.tankup.LoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="email id"
+        android:ems="10"
+        android:layout_above="@+id/button_signIn"
+        android:layout_alignStart="@+id/button_signIn"
+        android:layout_marginBottom="98dp"
+        android:id="@+id/editText_email"
+        android:layout_alignLeft="@+id/button_signIn" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="password"
+        android:layout_marginBottom="28dp"
+        android:id="@+id/editPassword"
+        android:layout_above="@+id/button_signIn"
+        android:layout_alignStart="@+id/editText_email"
+        android:layout_alignLeft="@+id/editText_email" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editPassword"
+        android:layout_toStartOf="@+id/editPassword"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView4"
+        android:layout_toLeftOf="@+id/editPassword"
+        android:layout_marginRight="25dp" />
+
+    <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignBaseline="@+id/editText_email"
+        android:layout_alignBottom="@+id/editText_email"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignRight="@+id/textView4" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Sign In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_signIn"
+        android:onClick="Click"
+        android:background="#0b7cac"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/button_newaccount"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Create new account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_newaccount"
+        android:layout_marginBottom="23dp"
+        android:onClick="Click"
+        android:background="#0b7cac"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
